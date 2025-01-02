@@ -1,0 +1,65 @@
+<div class="padding-global"><div class="container-large"><div class="padding-section-medium">{% paginate collection.products by 30 %}
+    <div li-paginate:by="30" li-paginate="collection.products" class="products_component" by="30"><form class="products_filter-form"><div id="w-node-c0be619c-9217-32af-3961-51d0c07868eb-c07868e5" class="filters_meta-wrapper"><div class="flex-h is-gap-tiny"><div>Showing</div><div li-object:text="collection.products_count">
+{{ collection.products_count }}
+</div><div>of</div><div li-object="collection.all_products_count">{{ collection.all_products_count }}</div></div><a li-object:href="filter.url_to_remove" href="{{ filter.url_to_remove }}" class="button is-link w-inline-block"><div>Reset filters</div></a></div><div class="filters_group"><a href="#" class="filters_content-top w-inline-block"><div class="text-style-allcaps text-weight-bold">search</div><div class="filters_arrow"><div class="icon-embed-tiny w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 8 7" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img"><path d="M1.5494 1.98362L4.0494 5.31662C4.1494 5.44962 4.3494 5.44962 4.4494 5.31662L6.9494 1.98362C7.0734 1.81862 6.9554 1.58362 6.7494 1.58362H1.7494C1.5434 1.58362 1.4254 1.81862 1.5494 1.98362Z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div></a><div class="filters_content"><div class="filters_inner-content"><input name="q" placeholder="Start typing..." type="search" id="filter-search" class="form_input is-filter" value="{{ search.terms }}">
+<label for="filter-search" class="hide">Search for products</label><input name="type" type="hidden" class="form_input" value="product">
+</div></div></div>{% for filter in collection.filters %}    <div li-for="filter in collection.filters">
+                                    
+                            {% if filter.values.size > 1 %}    <div li-if="filter.values.size > 1" class="filters_group">
+    <a href="#" class="filters_content-top w-inline-block"><div li-object="filter.name" class="text-style-allcaps text-weight-bold">{{ filter.name }}</div><div class="filters_arrow"><div class="icon-embed-tiny w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 8 7" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img"><path d="M1.5494 1.98362L4.0494 5.31662C4.1494 5.44962 4.3494 5.44962 4.4494 5.31662L6.9494 1.98362C7.0734 1.81862 6.9554 1.58362 6.7494 1.58362H1.7494C1.5434 1.58362 1.4254 1.81862 1.5494 1.98362Z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div></a><div class="filters_content"><div class="filters_inner-content">{% for filter_value in filter.values %}    <div li-for="filter_value in filter.values" class="filters_checkbox-item">
+                                    <input type="checkbox" name="{{ filter.param_name }}" class="filters_checkbox checked" value="{{ filter.true_value.value }}">
+
+                            
+                            <div class="filters_value-wrapper"><div li-object:text="filter_value.label | append: ' '" for="{{ filter.param_name }}">
+{{ filter_value.label | append: ' ' }}
+</div><div for="{{ filter.param_name }}"><span li-object:text="filter_value.count" class="text-style-muted">
+{{ filter_value.count }}
+</span></div></div>
+                            
+                        </div>
+{% endfor %}</div></div>    </div>
+{% endif %}
+                            
+                        </div>
+{% endfor %}</form><div id="w-node-c0be619c-9217-32af-3961-51d0c0786926-c07868e5" class="products_list-wrapper"><div class="margin-bottom margin-small"><div class="products_content-top"><div class="product_filter-tags-list">{% for filter_value in filter.active_values %}    <div li-for="filter_value in filter.active_values" class="flex-h is-break is-gap-medium">
+                                    
+                            {% for filter_value in filters.active_values %}    <div li-for="filter_value in filters.active_values" class="flex-h is-break is-gap-medium">
+                                    
+                            <a title="Remove Filter" li-object:href="filter_value.url_to_remove" aria-label="Remove Filter" href="{{ filter_value.url_to_remove }}" class="products_filter-tag w-inline-block"><div li-object="filter_value.label">{{ filter_value.label }}</div><div class="icon-embed-xxsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 20 20" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img"><title>xmark-sm</title><g fill="currentColor"><line x1="7" y1="7" x2="13" y2="13" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></line><line x1="7" y1="13" x2="13" y2="7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></line></g></svg></div></a>
+                            
+                        </div>
+{% endfor %}
+                            
+                        </div>
+{% endfor %}</div><select li-for:inside="option in collection.sort_options" id="sort-by" class="filters_dropdown-toggle">
+        {% for option in collection.sort_options %}                            
+                            <option value="{{ option.value }}" {% if option.value == collection.sort_by %}selected{% elsif option.value == collection.default_sort_by %}selected{% endif %}>{{ option.name }}</option>
+                            
+                    {% endfor %}    </select>
+</div></div><div id="w-node-c0be619c-9217-32af-3961-51d0c0786937-c07868e5" class="products_list is-3-col">{% for product in collection.products %}    <div li-for="product in collection.products" id="w-node-a5ce8253-dd8f-56bc-c449-12568dd99ff9-c07868e5">
+                                    
+                            {% render 'product_item', product: product %}
+
+                            
+                        </div>
+{% endfor %}</div>{% if paginate.pages > 1 %}    <nav li-if="paginate.pages > 1" class="pagination_component is-alternate">
+    <ul role="list" class="pagination_list is-space-between w-list-unstyled">{% if paginate.previous %}    <li li-if="paginate.previous" class="pagination_item">
+    <a li-object:href="paginate.previous.url" href="{{ paginate.previous.url }}" class="button is-icon-only is-alternate w-inline-block"><div class="icon-embed-xxsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 12 12" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img"><title>arrow-triangle-line-left</title><g fill="currentColor"><path d="m11,6.75h-5.75c-.414,0-.75-.336-.75-.75s.336-.75.75-.75h5.75c.414,0,.75.336.75.75s-.336.75-.75.75Z" stroke-width="0"></path><path d="m5.299,2.399c-.432-.21-.936-.159-1.317.136h0S.797,5.014.797,5.014c-.307.238-.482.598-.482.986s.176.748.482.986l3.186,2.479c.225.175.494.264.766.264.187,0,.375-.042.551-.128.432-.211.701-.642.701-1.123V3.522c0-.481-.269-.912-.701-1.123Z" stroke-width="0"></path></g></svg></div></a>    </li>
+{% endif %}{% for part in paginate.parts %}    <li li-for="part in paginate.parts" class="pagination_item">
+                                    
+                            {% if part.is_link %}    <div li-if="part.is_link">
+    <a li-attrbute:class="{% if part.title == paginate.current_page %}is-active{% endif %}" li-object:href="part.url" href="{{ part.url }}" class="pagination_count w-inline-block"><div li-object="part.title">{{ part.title }}</div></a>    </div>
+{% endif %}
+                            
+                            {% if part.is_link == false %}    <div li-if="part.is_link == false">
+    {% if part.is_link != true %}    <div li-if="part.is_link != true">
+    <div class="{% if part.title == paginate.current_page %}is-active{% endif %}"><div li-object="part.title">{{ part.title }}</div></div>    </div>
+{% endif %}    </div>
+{% endif %}
+                            
+                        </li>
+{% endfor %}{% if paginate.next %}    <li li-if="paginate.next" class="pagination_item">
+    <a li-object:href="paginate.next.url" href="{{ paginate.next.url }}" class="button is-icon-only is-alternate w-inline-block"><div class="icon-embed-xxsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 8 5" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img"><path d="M4.29102 4.25V0.75L6.62435 2.5L4.29102 4.25Z" fill="currentColor" stroke="currentColor" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1.08301 2.5H4.58302H4.41059" stroke="currentColor" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></a>    </li>
+{% endif %}</ul>    </nav>
+{% endif %}</div></div>{% endpaginate %}
+</div></div></div> {% schema %} {"tag":"section","name":"collection-products","class":"section_products","presets":[{"name":"collection-products","category":"Liquify"}]} {% endschema %}

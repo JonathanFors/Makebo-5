@@ -1,0 +1,32 @@
+<script type="module">import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+const swiper = new Swiper(".swiper", {
+  slideClass: "swiper_slide",
+  wrapperClass: "swiper_wrapper",
+  speed: 750,
+  slidesPerView: 'auto',
+  pagination: {
+    el: ".swiper_pagination",
+    bulletClass: "swiper_bullet",
+    bulletActiveClass: "is-active",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: `[swiper="next"]`,
+    prevEl: `[swiper="prev"]`,
+  },
+  loop: true,
+  breakpoints: {
+    992: {
+    },
+    768: {
+    },
+    320: {
+    },
+  },
+});
+const slides = document.querySelectorAll(".swiper_slide");
+slides.forEach((slide, index) => {
+  console.log("remove hidden attribute");
+  slide.removeAttribute("hidden");
+});
+</script>

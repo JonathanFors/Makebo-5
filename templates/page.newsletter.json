@@ -1,0 +1,28 @@
+{
+    "sections": {
+        "newsletter": {
+            "type": "newsletter"
+        },
+        "feature_right": {
+            "type": "feature_right"
+        },
+        "feature_left": {
+            "type": "feature_left"
+        },
+        "image_cta": {
+            "type": "image_cta"
+        },
+        "categories_list": {
+            "type": "categories_list"
+        }
+    },
+    "layout": "page.newsletter",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "newsletter",
+        "feature_right",
+        "feature_left",
+        "image_cta",
+        "categories_list"
+    ]
+}

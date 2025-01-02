@@ -1,0 +1,20 @@
+{
+    "sections": {
+        "collection_products": {
+            "type": "collection_products"
+        },
+        "testimonials": {
+            "type": "testimonials"
+        },
+        "categories_list": {
+            "type": "categories_list"
+        }
+    },
+    "layout": "search",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "collection_products",
+        "testimonials",
+        "categories_list"
+    ]
+}
