@@ -1,0 +1,40 @@
+{
+    "sections": {
+        "about": {
+            "type": "about"
+        },
+        "info_bar": {
+            "type": "info_bar"
+        },
+        "testimonials": {
+            "type": "testimonials"
+        },
+        "feature_right": {
+            "type": "feature_right"
+        },
+        "feature_left": {
+            "type": "feature_left"
+        },
+        "product_slider": {
+            "type": "product_slider"
+        },
+        "image_cta": {
+            "type": "image_cta"
+        },
+        "categories_list": {
+            "type": "categories_list"
+        }
+    },
+    "layout": "page.about",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "about",
+        "info_bar",
+        "testimonials",
+        "feature_right",
+        "feature_left",
+        "product_slider",
+        "image_cta",
+        "categories_list"
+    ]
+}

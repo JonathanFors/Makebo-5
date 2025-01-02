@@ -1,0 +1,36 @@
+{
+    "sections": {
+        "collection_header": {
+            "type": "collection_header"
+        },
+        "categories_list": {
+            "type": "categories_list"
+        },
+        "info_bar": {
+            "type": "info_bar"
+        },
+        "collection_products": {
+            "type": "collection_products"
+        },
+        "callout": {
+            "type": "callout"
+        },
+        "testimonials": {
+            "type": "testimonials"
+        },
+        "categories_list_1": {
+            "type": "categories_list_1"
+        }
+    },
+    "layout": "collection",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "collection_header",
+        "categories_list",
+        "info_bar",
+        "collection_products",
+        "callout",
+        "testimonials",
+        "categories_list_1"
+    ]
+}
