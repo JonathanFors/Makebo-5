@@ -1,56 +1,174 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "hero_slider": {
-            "type": "hero_slider"
+  "sections": {
+    "hero_slider": {
+      "type": "hero_slider",
+      "blocks": {
+        "slide_WbMhnx": {
+          "type": "slide",
+          "settings": {
+            "image_background_image": "shopify://shop_images/tamara-bellis-IwVRO3TLjLc-unsplash.jpg",
+            "text_heading": "SHORT HEADING GOES HERE",
+            "textarea_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+            "url_primary_button_link": "",
+            "text_primary_button_label": "Shop now",
+            "url_secondary_button_link": "",
+            "text_secondary_button_label": "view collections"
+          }
         },
-        "info_bar": {
-            "type": "info_bar"
-        },
-        "categories_list_1": {
-            "type": "categories_list_1"
-        },
-        "product_slider": {
-            "type": "product_slider"
-        },
-        "collection_feature_1": {
-            "type": "collection_feature_1"
-        },
-        "image_cta": {
-            "type": "image_cta"
-        },
-        "featured_categories": {
-            "type": "featured_categories"
-        },
-        "testimonials": {
-            "type": "testimonials"
-        },
-        "collection_feature_2": {
-            "type": "collection_feature_2"
-        },
-        "value_props": {
-            "type": "value_props"
-        },
-        "video_cta": {
-            "type": "video_cta"
-        },
-        "categories_list_2": {
-            "type": "categories_list_2"
+        "slide_w3racR": {
+          "type": "slide",
+          "settings": {
+            "text_heading": "SHORT HEADING GOES HERE",
+            "textarea_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+            "url_primary_button_link": "",
+            "text_primary_button_label": "Shop now",
+            "url_secondary_button_link": "",
+            "text_secondary_button_label": "view collections"
+          }
         }
+      },
+      "block_order": [
+        "slide_WbMhnx",
+        "slide_w3racR"
+      ],
+      "settings": {}
     },
-    "layout": "theme",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "hero_slider",
-        "info_bar",
-        "categories_list_1",
-        "product_slider",
-        "collection_feature_1",
-        "image_cta",
-        "featured_categories",
-        "testimonials",
-        "collection_feature_2",
-        "value_props",
-        "video_cta",
-        "categories_list_2"
-    ]
+    "info_bar": {
+      "type": "info_bar",
+      "blocks": {
+        "info_item_VDdbwi": {
+          "type": "info-item",
+          "settings": {
+            "text_label": "free 5-day shipping"
+          }
+        }
+      },
+      "block_order": [
+        "info_item_VDdbwi"
+      ],
+      "settings": {}
+    },
+    "categories_list_1": {
+      "type": "categories_list_1",
+      "settings": {}
+    },
+    "product_slider": {
+      "type": "product_slider",
+      "settings": {
+        "text_heading": "Popular picks",
+        "textarea_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+    },
+    "collection_feature_1": {
+      "type": "collection_feature_1",
+      "settings": {
+        "checkbox_display_title_paragraph": true,
+        "text_heading": "Collection name here",
+        "text_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.",
+        "url_primary_button_link": "",
+        "text_primary_button_label": "Browse more",
+        "collection_collection": "frontpage",
+        "collection_collection_limit": 6
+      }
+    },
+    "image_cta": {
+      "type": "image_cta",
+      "settings": {
+        "text_heading": "Heading",
+        "text_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+        "url_primary_button_link": "",
+        "text_primary_button_label": "Shop now",
+        "image_background_image": "shopify://shop_images/tamara-bellis-IwVRO3TLjLc-unsplash.jpg"
+      }
+    },
+    "featured_categories": {
+      "type": "featured_categories",
+      "settings": {
+        "url_button_link_1": "",
+        "text_heading_1": "Heading",
+        "text_button_label_1": "Shop Collection",
+        "image_background_image_1": "shopify://shop_images/lera-kogan-pZx6TZMUjYQ-unsplash.jpg",
+        "url_button_link_2": "",
+        "text_heading_2": "Heading",
+        "text_button_label_2": "Shop Collection",
+        "image_background_image_2": "shopify://shop_images/lera-kogan-pZx6TZMUjYQ-unsplash.jpg"
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "settings": {
+        "text_testimonial": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.\"",
+        "image_testimonial_portrait": "shopify://shop_images/lera-kogan-pZx6TZMUjYQ-unsplash.jpg",
+        "text_full_name": "Name Surname",
+        "text_subtext": "Title",
+        "text_feature_label_1": "Free 5-day shipping",
+        "text_feature_label_2": "Free 5-day shipping",
+        "text_feature_label_3": "Free 5-day shipping"
+      }
+    },
+    "collection_feature_2": {
+      "type": "collection_feature_2",
+      "settings": {
+        "checkbox_display_title_paragraph": true,
+        "text_heading": "Collection name here",
+        "text_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.",
+        "url_primary_button_link": "",
+        "text_primary_button_label": "Browse more",
+        "collection_collection": "last-chance",
+        "collection_collection_limit": 6
+      }
+    },
+    "value_props": {
+      "type": "value_props",
+      "settings": {
+        "text_title": "Medium length section heading goes here",
+        "text_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
+        "text_subheading_1": "Subheading one",
+        "text_sub_paragraph_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+        "text_subheading_2": "Subheading two",
+        "text_sub_paragraph_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+        "url_primary_button_link": "",
+        "text_primary_button_label": "Shop now",
+        "image_small_image": "shopify://shop_images/lera-kogan-pZx6TZMUjYQ-unsplash.jpg",
+        "image_large_image": "shopify://shop_images/lera-kogan-pZx6TZMUjYQ-unsplash.jpg"
+      }
+    },
+    "video_cta": {
+      "type": "video_cta",
+      "settings": {
+        "image_image": "shopify://shop_images/tamara-bellis-IwVRO3TLjLc-unsplash.jpg",
+        "url_primary_button_link": "",
+        "text_primary_button_label": "Shop now"
+      }
+    },
+    "categories_list_2": {
+      "type": "categories_list_2",
+      "settings": {}
+    }
+  },
+  "layout": "theme",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "hero_slider",
+    "info_bar",
+    "categories_list_1",
+    "product_slider",
+    "collection_feature_1",
+    "image_cta",
+    "featured_categories",
+    "testimonials",
+    "collection_feature_2",
+    "value_props",
+    "video_cta",
+    "categories_list_2"
+  ]
 }
